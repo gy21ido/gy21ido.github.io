@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+html { 
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: cursive;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.content img {
+    vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+}
+
+.example p{
+    text-align: center;
+}
+
+.example > .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.example > .images > div{
+    padding: 0;
+    margin: 0;
+    height: 450px;
+}
+
+.example img{
+    width: 100%;
+    height: 400px;
+}
+
+.main{
+    color: black;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    background-image:url('./images/background.png');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed; 
+    color: black;
+}
+
+.main h1{
+    border-left: solid 2px ;
+    text-align: center; 
+}
+
+.main a {
+    margin: 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+.main a:hover {
+    color: black;
+}
+
+.btn {
+    
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.content{
+    padding: 10px;
+}

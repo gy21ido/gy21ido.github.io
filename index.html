@@ -1,8 +1,81 @@
-<HTML>
-<TITLE>
-Test
-</TITLE>
-<BODY>
-Hello world
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>201576424- Agent Based Modelling</title>
+        <link rel="stylesheet" media="all" href="website.css" type="text/css"> <!--link to CSS file-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon library -->    
+    </head>
+
+    <body>
+        <div class="main">
+            <a class="btn" href="https://github.com/gy21ido/GEOG5990Practical"><i class="fa fa-fw fa-home" aria-hidden="true"></i>GitHub Page</a>
+            <h1>201576424 | Agent Based Modelling Portfolio Website</h1>
+
+        </div>
+        <div class="content">
+            <p>Hello, and welcome to my portfolio website for GEOG5990- Python for Geographical Information Analysis. This website shows the link to my GitHub repository for the Python Agent Based Modelling and instructions on how to run the codes within the GitHub page. The following files are included in this repository:</p>
+            <ul>
+                <li>The Model code: contains information about the agents, iterations given to them, and stopping conditions that ensure model is run efficiently.
+                </li>
+                <li> The Agent class code: agents are built and all behaviours such as how they move, share with their neighbours, eat, and breed to populate themselves.Two agent classes were created;  one for the agents, and another for their predators (wolves).
+                </li>
+                <li>The Environment code: the space within which the agents and their predators (wolves) behave and interact with themselves. This is a raster grid of data, plotted with matplotlib to include colours. 
+                </li>
+            </ul>
+            
+            <h3>Instructions to run the code:  </h3> 
+            
+                
+            <ol>
+                <li>Download all files stated above to your local machine (all found on the GitHub page)</li>
+                <li> For user interactivity, the code asks the user to input the: 
+                    <ul>
+                        <li>number of agents as integer between 0 and 100,
+                        </li>
+                        <li>number of iterations between 0 and 200, and</li>  <li>number of wolves between 0 and 50.</li>
+                        <li>number of loops between 1 and 5 for timing.</li>
+                    </ul>
+                    <b>Note: </b> User must enter a value within the boundaries for each variable. Also, user may quit before running the model by hitting <b>'q or Q'</b> key on their keyboards.
+                </li>
+                <li>A tkinter window pops up, click the <b>'Model'</b> button, then click on <span class="bold">'Run Model'</span>
+                <p><span class="bold">Note:</span>User runs the model the number of times stated in their chosen loop <span class="bold">(Agents are blue, Wolves are black in colour)</span></p></li>
+                <li>Exit the model using the <span class="bold">'Click and Quit'</span>button on the model frame or click the cross button at the frame edge</li>
+            </ol>
+           <p><b>Sample animation (10 agents, 100 iterations, and 20 wolves) with colour change due to agents eating within the environment is shown below:</b></p>
+            <img src="./images/myAnimation.gif" alt="Animation">
+        </div>
+
+        <div class="example">
+            <p><b>Illustrations</b></p>
+            <div class="images">
+                <div>
+                    <img src="./images/first_run.JPG" alt="Environment">
+                    <span>Figure 1</span>
+                </div>
+                <div>
+                    <img src="./images/Run_code.JPG" alt="model">
+                    <span>Figure 2</span>
+                </div>
+                <div>
+                    <img src="./images/run_code_stats.png" alt="statistics">
+                    <span>Figure 3</span>
+                </div>   
+                <div>
+                    <img src="./images/timer_plot.png" alt="statistics">
+                    <span>Figure 4</span>
+                </div>  
+                
+            </div>
+            <ul>
+                <li>Figure 1: Environment with one agent and one wolf, without eating.</li>
+                <li>Figure 2:  Environment with 10 agents, 20 wolves, 2 children (after moving and eating)
+                </li>
+                <li>Figure 3: Environment with agents, wolves with their default colours. Other colours represent statistics values derived from the code.
+                </li>
+                <li>Figure 4: Plot of Number of Agents against time.
+                </li>
+            </ul>
+        </div> 
+    </body>
+</html>
